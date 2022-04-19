@@ -1,0 +1,16 @@
+package Oops3;
+
+public class GamingLaptop implements Laptop{
+public String getBestForUse(int price) {
+	if(price<50000) {
+		return"Best";
+	}
+	else {
+		return "Ok";
+	}
+}
+public static void main(String[] args) {
+	GamingLaptop g=new GamingLaptop();
+	System.out.println(g.getBestForUse(45000));
+}
+}
